@@ -2,7 +2,7 @@
 export default function handler(req, res) {
     if (req.method === 'POST') {
 
-        log(req);
+        console.log(req);
 
         const { text, pattern } = req.body;
   
