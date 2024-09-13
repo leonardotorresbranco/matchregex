@@ -7,6 +7,7 @@ app = Flask(__name__)
 def match_regex():
     try:
         data = request.get_json()
+        print(data)
         text = data.get('text')
         pattern = data.get('pattern')
 
