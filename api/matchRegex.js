@@ -1,6 +1,7 @@
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     try {
+      console.log(req.body);
       // Parse manual do body para JSON
       const body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
       const { text, pattern } = body;
