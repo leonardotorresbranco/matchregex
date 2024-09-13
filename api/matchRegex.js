@@ -1,6 +1,7 @@
 
 export default function handler(req, res) {
     if (req.method === 'POST') {
+        print(req);
       const { text, pattern } = req.body;
   
       if (!text || !pattern) {
