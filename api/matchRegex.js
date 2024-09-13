@@ -1,8 +1,10 @@
 
 export default function handler(req, res) {
     if (req.method === 'POST') {
-        print(req);
-      const { text, pattern } = req.body;
+
+        log(req);
+
+        const { text, pattern } = req.body;
   
       if (!text || !pattern) {
         return res.status(400).json({ message: "Missing 'text' or 'pattern' in request body" });
